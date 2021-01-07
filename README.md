@@ -10,7 +10,7 @@ Figure 1: the pipeline of making salient dataset, and comparison of our proposed
 3) we use the generated segmentation masks to filter the geometric information extracted in step 1. (see the fourth column)
 
 
-![Salient KITTI Demo](https://www.bilibili.com/video/BV15f4y1y7Su)
+![BV15f4y1y7Su](/figure/figure3.png)(https://www.bilibili.com/video/BV15f4y1y7Su)
 
 
 Salient KITTI Dataset：
