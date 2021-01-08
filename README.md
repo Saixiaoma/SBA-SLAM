@@ -9,8 +9,8 @@ Figure 1: the pipeline of making salient dataset, and comparison of our proposed
 2) we use semantic segmentation network to generate segmentation mask around the interest object, such as traffic light, traffic sign, pole, road, etc. (see the third column)
 3) we use the generated segmentation masks to filter the geometric information extracted in step 1. (see the fourth column)
 
-
-![BV15f4y1y7Su](/figure/figure3.png)(https://www.bilibili.com/video/BV15f4y1y7Su)
+#video demo
+![BV15f4y1y7Su](/figure/figure3.png)(see the link: https://www.bilibili.com/video/BV15f4y1y7Su)
 
 
 Salient KITTI Dataset：
