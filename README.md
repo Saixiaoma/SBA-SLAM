@@ -1,4 +1,4 @@
-# SBA-SLAM
+# SBAS-SLAM
 The relevant dataset and source code for "SBAS: Salient bundle adjustment for visual SLAM"
 # This code will be uploaded as soon as possible after the corresponding paper is accepted.
 
@@ -9,10 +9,10 @@ Figure 1: the pipeline of making salient dataset, and comparison of our proposed
 2) we use semantic segmentation network to generate segmentation mask around the interest object, such as traffic light, traffic sign, pole, road, etc. (see the third column)
 3) we use the generated segmentation masks to filter the geometric information extracted in step 1. (see the fourth column)
 
-#video demo
+# video demo
 ![BV15f4y1y7Su](/figure/figure3.png)(see the link: https://www.bilibili.com/video/BV15f4y1y7Su)
 
 
-Salient KITTI Dataset：
+# Salient KITTI Dataset：
 
 Google drive： https://drive.google.com/file/d/1MEuUVR24BPa2rYW8o5aqyEqxw3Fng5Nf/view?usp=sharing
