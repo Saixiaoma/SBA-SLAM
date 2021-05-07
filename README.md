@@ -3,7 +3,7 @@ The relevant dataset and source code for "SBAS: Salient bundle adjustment for vi
 # This code will be uploaded as soon as possible after the corresponding paper is accepted.
 ## Framework
 Our proposed framework comprises two components: a geometry-based SLAM pipeline and a learning-based saliency prediction module. The saliency prediction module generates a saliency map (a 2D distribution predicting the conspicuity of specific locations and their likelihood in attracting fixations) corresponding to the input image. Then, the saliency map is used as input to help the SLAM system choose the salient feature point to improve the accuracy and robustness. Specifically, we use the saliency map as a weight map in bundle adjustment to gives the features in salient regions a larger weight, which we called salient bundle adjustment. Finally, our proposed SBA is used to estimate camera motion in tracking thread, build the local map in local mapping thread, and merge the map in Loop & Map merging thread. Besides, in our proposed framework, we adopt ORB-SLAM3 as the backbone.
-![figure1](/framework.png)
+![figure1](/figure/framework.png)
 
 ## Saliency map computation
 Visual saliency or visual attention mechanism refers to mimic the human vision system to select the most salient and interesting features from natural scenes for further processing under different tasks. This is very curial for SLAM, where the system can pay more attention to areas with rich corners and lines, while ignoring the dynamic dynamics, in complex environments. There are several datasets used for saliency prediction. By analyzing the data of these datasets, we can find that these datasets have the following characteristics: 
