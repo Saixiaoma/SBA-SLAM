@@ -9,11 +9,17 @@ test video demo
 https://www.bilibili.com/video/bv1DN411f7Ly
 ## Saliency map computation
 Visual saliency or visual attention mechanism refers to mimic the human vision system to select the most salient and interesting features from natural scenes for further processing under different tasks. This is very curial for SLAM, where the system can pay more attention to areas with rich corners and lines, while ignoring the dynamic dynamics, in complex environments. There are several datasets used for saliency prediction. By analyzing the data of these datasets, we can find that these datasets have the following characteristics: 
+
 (a) saliency is highly relevant with objects; 
+
 (b) saliency is highly relevant with dynamic objects or the dynamic part of the object; 
+
 (c) long-standing objects will receive continuous attention for a period of time; 
+
 (d) newly-appearing objects are more noticeable than old ones; 
+
 (e) When the scene is cluttered or there is no obvious dominant object in the scene, the attention will be biased to the center. 
+
 However, this saliency does not completely describe everything the SLAM should attend to, and even some saliency will cause the failure of the SLAM system, such as the saliency associated with dynamic objects. Therefore, we should make our saliency prediction model focusing on the right stuff. 
 For SLAM applications, we usually regard corners, edges and planes as image features. Therefore, we first extract the geometric information of each image such as points, lines, and planes, as shown in Fig.1(column 2). Then, we used the SDC-Net as the backbone, and trained the model on the Cityscapes dataset. Since the total of 30 classes in the Cityscapes dataset, we only choose 13 categories that are most relevant to the regions with robust, stable and salient features - traffic light, traffic sign, road, building, sidewalk, parking, rail track, fence, bridge, pole, pole-group, vegetation, terrain. For each image, SDC-Net provides an instance segmentation of every detected object, as shown in Fig.1(column 3). Finally, we use these segmentations to filter the geometric information to obtain the saliency map. Besides, since the saliency map obtained only from semantic will give equal-weighted attention to all the objects present. We give each object a unique weight. Fig.2(column 4) and Fig.2(column 5) show the comparison of our proposed saliency map with the existing gaze-only saliency map. 
 
