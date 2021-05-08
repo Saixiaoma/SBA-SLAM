@@ -6,7 +6,7 @@ Our proposed framework comprises two components: a geometry-based SLAM pipeline 
 ![figure1](/figure/framework.png)
 
 test video demo
-![videodemo](https://www.bilibili.com/video/bv1DN411f7Ly)
+https://www.bilibili.com/video/bv1DN411f7Ly
 ## Saliency map computation
 Visual saliency or visual attention mechanism refers to mimic the human vision system to select the most salient and interesting features from natural scenes for further processing under different tasks. This is very curial for SLAM, where the system can pay more attention to areas with rich corners and lines, while ignoring the dynamic dynamics, in complex environments. There are several datasets used for saliency prediction. By analyzing the data of these datasets, we can find that these datasets have the following characteristics: 
 (a) saliency is highly relevant with objects; 
